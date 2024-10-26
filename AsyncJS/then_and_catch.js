@@ -22,3 +22,21 @@
 // Rejected: The Promise has been rejected and the reason for the rejection is available.
 // A Promise can be created using the 'Promise' constructor, which takes a callback function as an  argument. The callback function is executed when the Promise is resolved or rejected.
 // A Promise can also be created using the 'async/await' syntax, which is a more  concise way of  writing asynchronous code. 
+
+// then statements
+
+let promise = new Promise((resolve, reject) => {
+    if(true){
+        return resolve("promise is resolved");
+    } else{
+        return reject("promise is rejected");
+    }
+})
+
+promise
+.then(function(res){
+    console.log(res);
+})
+.catch(function(rej){
+    console.log(rej);
+})
