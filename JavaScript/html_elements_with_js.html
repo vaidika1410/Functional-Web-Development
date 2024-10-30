@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        html , body{
+
+        html,
+        body {
             height: 100%;
             width: 100%;
             background-color: #111;
@@ -20,18 +23,35 @@
         }
     </style>
 </head>
+
 <body>
     <div class="root">
         <h1>hello from html</h1>
     </div>
-    
+    <div class="parent"></div>
+
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script>
         var root = document.querySelector(".root")
         var h2 = document.createElement("h2")
 
         h2.innerHTML = "hello from js"
-        console.log(h2)
         root.appendChild(h2)
+
+
+
+        //using reactjs
+
+        var h3 = React.createElement("h3", null, "hello from react")
+        var parent = document.querySelector(".parent")
+
+        var newr = ReactDOM.createRoot(root)
+
+        newr.render(h3)
+        
     </script>
 </body>
+
 </html>
