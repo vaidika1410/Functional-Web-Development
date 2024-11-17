@@ -1,0 +1,14 @@
+.block{
+    height: 30vh;
+    width: 20vw;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block .tagname{
+    padding: 1.5vh;
+    background-color: #111;
+    text-transform: uppercase;
+}
