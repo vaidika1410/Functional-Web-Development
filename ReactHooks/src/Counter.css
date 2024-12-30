@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    font-family: gilroy;
+    color: white;
+}
+
+.main{
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+}
+
+button{
+    padding: 2vh 4vw;
+    font-size: 3vh;
+    font-family: gilroy;
+}
